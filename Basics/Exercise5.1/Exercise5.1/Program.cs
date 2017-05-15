@@ -2,6 +2,8 @@
 
 namespace Exercise5._1
 {
+    // Task: Write a program and ask the user to enter a number. The number should be between 1 and 10. If the number is in this range it is valid.
+    //       If the number is outside this range it is invalid. Return the result to the user.
     class Program
     {
         static string ValidateNumber(int input, int min, int max)
@@ -14,6 +16,7 @@ namespace Exercise5._1
 
             return result;
         }
+
         static void Main(string[] args)
         {
             const int min = 1;
