@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Exercise5._7
 {
@@ -10,6 +6,11 @@ namespace Exercise5._7
     //       Display output to console in format 5! = 120
     class Program
     {
+        /// <summary>
+        /// Factorial uses recursion to find the factorial of a given number.
+        /// </summary>
+        /// <param name="number">Integer to calculate the factorial of.</param>
+        /// <returns>An integer representing the factorial of a given number.</returns>
         static int Factorial(int number)
         {
             int result;
