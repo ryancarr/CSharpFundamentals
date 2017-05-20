@@ -25,17 +25,19 @@ namespace Exercise6._1
 
             count = names.Count;
 
-            if (count >= 3)
+            switch(count)
             {
-                output = String.Format("{0}, {1} and {2} others liked your status.", names[0], names[1], count - 2);
-            }
-            else if (count == 2)
-            {
-                output = String.Format("{0} and {1} liked your status.", names[0], names[1]);
-            }
-            else if (count == 1)
-            {
-                output = String.Format("{0} liked your status.", names[0]);
+                case 0:
+                    break;
+                case 1:
+                    output = String.Format("{0} liked your status.", names[0]);
+                    break;
+                case 2:
+                    output = String.Format("{0} and {1} liked your status.", names[0], names[1]);
+                    break;
+                default:
+                    output = String.Format("{0}, {1} and {2} others liked your status.", names[0], names[1], count - 2);
+                    break;
             }
 
             Console.WriteLine(output);
